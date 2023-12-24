@@ -1,0 +1,25 @@
+.header_container {
+    height: 80vh;
+    background-image: url("/assets/contact.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header_title_container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.sub_title {
+    color: white;
+    font-size: 24px;
+}
