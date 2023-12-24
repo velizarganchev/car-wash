@@ -9,7 +9,7 @@ export default function About() {
                 <div className="col-span-2">
                     <p className="uppercase text-xl tracking-widest text-[#549475]">About Us</p>
                     <h2 className="py-4">Ivan Car Wash</h2>
-                    <p className="p-2 text-gray-600">
+                    <p className="py-2 text-gray-600">
                         At our mobile detailing company, we prioritize delivering top-quality car detailing services. Our skilled technicians, equipped with state-of-the-art tools, ensure your vehicle looks brand new. Using premium products and techniques, we guarantee exceptional results. Whether you opt for exterior detailing, interior detailing, or polishing, our services cater to your specific needs.
                         Client satisfaction is our ultimate goal, driving our commitment to excellence. Choose us to revitalize your car and experience the difference in our dedicated approach
                     </p>
