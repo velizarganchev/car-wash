@@ -1,7 +1,6 @@
-import React from 'react'
 import styles from "./header-style.module.css"
 
-const Header = () => {
+export default function Header() {
     return (
         <div className={styles.header_container}>
             <div className={styles.header_title_container}>
@@ -11,5 +10,3 @@ const Header = () => {
         </div>
     )
 }
-
-export default Header;

@@ -1,5 +1,6 @@
 import Head, { defaultHead } from "next/head"
 import Navigation from "./navigation/navigation"
+import Footer from "../footer/footer-component"
 
 const Layout = ({ children, title = 'Car Wash' }) => {
     return (
@@ -10,8 +11,9 @@ const Layout = ({ children, title = 'Car Wash' }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navigation/>
+            <Navigation />
             {children}
+            <Footer />
         </>
     )
 }
