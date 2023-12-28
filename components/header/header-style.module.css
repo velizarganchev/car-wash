@@ -1,10 +1,6 @@
 .header_container {
     height: 80vh;
-<<<<<<< HEAD
-    background-image: url("/assets/contact.jpg");
-=======
     background-image: url("/assets/porsche-911.jpg");
->>>>>>> dev
     background-size: cover;
     background-position: center;
 }

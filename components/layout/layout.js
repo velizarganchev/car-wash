@@ -1,9 +1,6 @@
 import Head, { defaultHead } from "next/head"
 import Navigation from "./navigation/navigation"
-<<<<<<< HEAD
-=======
 import Footer from "../footer/footer-component"
->>>>>>> dev
 
 const Layout = ({ children, title = 'Car Wash' }) => {
     return (
@@ -16,10 +13,7 @@ const Layout = ({ children, title = 'Car Wash' }) => {
             </Head>
             <Navigation/>
             {children}
-<<<<<<< HEAD
-=======
             <Footer />
->>>>>>> dev
         </>
     )
 }
