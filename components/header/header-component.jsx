@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 import React from 'react'
 import styles from "./header-style.module.css"
 
 const Header = () => {
+=======
+import styles from "./header-style.module.css"
+
+export default function Header() {
+>>>>>>> dev
     return (
         <div className={styles.header_container}>
             <div className={styles.header_title_container}>
@@ -10,6 +16,10 @@ const Header = () => {
             </div>
         </div>
     )
+<<<<<<< HEAD
 }
 
 export default Header;
+=======
+}
+>>>>>>> dev
