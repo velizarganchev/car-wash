@@ -29,6 +29,10 @@
     color: rgb(154, 191, 223);
 }
 
+.footer_quick_links_list_container {
+    width: 100%;
+}
+
 .footer_quick_links_item {
     width: 100%;
     padding-bottom: 10px;
@@ -63,6 +67,7 @@
     padding: 12px;
     color: white;
     background-color: rgb(154, 191, 223);
+    border: 1px solid rgb(154, 191, 223);
     border-radius: 10px;
     font-weight: bold;
 }
@@ -70,7 +75,7 @@
 .footer_book_btn button:hover {
     background-color: white;
     color: rgb(154, 191, 223);
-    border: 2px solid rgb(154, 191, 223);
+    border: 1px solid rgb(154, 191, 223);
 }
 
 .opening_hours {
@@ -83,7 +88,7 @@
 }
 
 .footer_follow_us_social_main_container {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .footer_follow_us_logo_container {
@@ -109,4 +114,73 @@
 .follow_us_social_icon_container {
     font-size: 25px;
     cursor: pointer;
+}
+
+
+@media(max-width: 1220px) {
+    .footer_main_container {
+        flex-direction: column;
+    }
+
+    .footer_quick_links_container,
+    .footer_location_container,
+    .footer_opening_hours_container,
+    .footer_follow_us_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .quick_links_title_container,
+    .footer_location_title_container,
+    .opening_hours_title_container,
+    .holiday_title_container,
+    .footer_follow_us_title_container {
+        text-align: center;
+    }
+
+    .footer_quick_links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer_quick_links_item {
+        width: auto;
+    }
+
+    .footer_book_btn button {
+        width: 100%;
+    }
+
+    .opening_hours_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opening_hours {
+        width: 200px;
+    }
+
+    .footer_holiday_list {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        list-style-type: none;
+    }
+
+    .footer_follow_us_text_container {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 940px) {
+
+    .footer_quick_links,
+    .footer_holiday_list {
+        flex-direction: column;
+    }
 }

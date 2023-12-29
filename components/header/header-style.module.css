@@ -5,7 +5,7 @@
     background-position: center;
 }
 
-.header_title_container{
+.header_title_container {
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -22,4 +22,34 @@
 .sub_title {
     color: white;
     font-size: 24px;
+}
+
+@media(max-width: 1050px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .sub_title {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 750px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .sub_title {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 520px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .sub_title {
+        font-size: 8px;
+    }
 }

@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 70vh;
     background-color: black;
     color: white;
     margin-bottom: 50px;
@@ -29,7 +28,7 @@
 .book_subtitle_container {
     text-align: center;
     margin-top: 20px;
-    color: rgb(154,191,223);
+    color: rgb(154, 191, 223);
 }
 
 .book_title_container {
@@ -39,7 +38,6 @@
 
 .book_text_container {
     margin-top: 30px;
-    width: 60%;
 }
 
 .book_left_book_btn {
@@ -50,7 +48,7 @@
     width: 200px;
     padding: 12px;
     color: white;
-    background-color: rgb(154,191,223);
+    background-color: rgb(154, 191, 223);
     border: 1px solid black;
     border-radius: 10px;
     font-weight: bold;
@@ -58,8 +56,8 @@
 
 .book_left_book_btn button:hover {
     background-color: white;
-    color: rgb(154,191,223);
-    border: 2px solid rgb(154,191,223);
+    color: rgb(154, 191, 223);
+    border: 2px solid rgb(154, 191, 223);
 }
 
 .book_right_container {
@@ -70,9 +68,62 @@
 
 .book_right_img_container {
     height: 50vh;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .book_right_img_container img {
     border-radius: 10px;
     height: 100%;
+}
+
+@media(max-width: 1220px) {
+    .book_subtitle_container {
+        font-size: 10px;
+    }
+
+    .book_title_container {
+        font-size: 20px;
+    }
+
+    .book_text_container {
+        font-size: 13px;
+    }
+
+    .book_left_book_btn button {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 950px) {
+    .book_container {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .book_left_container {
+        height: auto;
+    }
+
+    .book_right_container {
+        width: 100%;
+    }
+
+    .book_right_img_container {
+        width: 220px;
+        height: auto;
+    }
+}
+
+@media(max-width: 400px) {
+    .book_left_container {
+        padding: 0px;
+        align-items: center;
+    }
+
+    .book_left_book_btn {
+        margin: 30px;
+    }
 }

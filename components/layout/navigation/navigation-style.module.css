@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(154,191,223);
+    border-bottom: 1px solid rgb(154, 191, 223);
 }
 
 .info_links {
@@ -39,14 +39,14 @@
 
 .book_btn {
     padding: 12px;
-    background-color: rgb(154,191,223);
+    background-color: rgb(154, 191, 223);
     border-radius: 10px;
     font-weight: bold;
 }
 
 .book_btn:hover {
     background-color: white;
-    color: rgb(154,191,223);
+    color: rgb(154, 191, 223);
 }
 
 .nav_list_container {
@@ -55,7 +55,7 @@
     width: 100%;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgb(154,191,223);
+    border-bottom: 1px solid rgb(154, 191, 223);
 }
 
 .nav_list {
@@ -72,7 +72,7 @@
 }
 
 .nav_list_item:hover {
-    color: rgb(154,191,223);
+    color: rgb(154, 191, 223);
 }
 
 .logo {
@@ -81,4 +81,14 @@
     object-fit: cover;
 }
 
-@media(max-width: 1050px) {}
+@media(max-width: 1050px) {
+    .nav_list_item {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 920px) {
+    .nav_container{
+        display: none;
+    }
+}

@@ -10,8 +10,8 @@ export default function Footer() {
                 <div className={styles.quick_links_title_container}>
                     <h4>QUICK LINKS</h4>
                 </div>
-                <div className={styles.footer_quick_links}>
-                    <ul className={styles.quick_links}>
+                <div className={styles.footer_quick_links_list_container}>
+                    <ul className={styles.footer_quick_links}>
                         <li className={styles.footer_quick_links_item}>HOME</li>
                         <li className={styles.footer_quick_links_item}>CERAMIC COATING</li>
                         <li className={styles.footer_quick_links_item}>PAINT CORRECTION</li>
@@ -30,7 +30,7 @@ export default function Footer() {
                     <p>7575 Airport Rd, Hornell, NY 14843</p>
                 </div>
                 <div className={styles.footer_map_container}>
-                    <iframe className="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.316625095056!2d8.295605176556604!3d51.59908687183433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bbd0fd24079d37%3A0x9b1f6913496ffcde!2sSchlehengrund%205%2C%2059597%20Erwitte!5e0!3m2!1sde!2sde!4v1699550695318!5m2!1sde!2sde" style={{ width: '80%', height: '200px', border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+                    <iframe className="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.316625095056!2d8.295605176556604!3d51.59908687183433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bbd0fd24079d37%3A0x9b1f6913496ffcde!2sSchlehengrund%205%2C%2059597%20Erwitte!5e0!3m2!1sde!2sde!4v1699550695318!5m2!1sde!2sde" style={{ width: '100%', height: '200px', border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
                 <div className={styles.footer_contact_container}>
@@ -46,11 +46,13 @@ export default function Footer() {
                     <div className={styles.opening_hours_title_container}>
                         <h4>HOURS OF OPERATION</h4>
                     </div>
-                    <div className={styles.opening_hours}>
-                        <p>Mon - Fri: 9am - 5pm EST</p>
-                    </div>
-                    <div className={styles.opening_hours}>
-                        <p>Sat: 9am - 2pm EST</p>
+                    <div className={styles.opening_hours_container}>
+                        <div className={styles.opening_hours}>
+                            <p>Mon - Fri: 9am - 5pm EST</p>
+                        </div>
+                        <div className={styles.opening_hours}>
+                            <p>Sat: 9am - 2pm EST</p>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.footer_holiday_container}>

@@ -1,6 +1,6 @@
 import Head, { defaultHead } from "next/head"
 import Navigation from "./navigation/navigation"
-import Footer from "../footer/footer-component"
+import Footer from "./footer/footer-component"
 
 const Layout = ({ children, title = 'Car Wash' }) => {
     return (
