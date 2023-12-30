@@ -34,8 +34,8 @@ export default function Footer() {
                     </iframe>
                 </div>
                 <div className={styles.footer_contact_container}>
-                    <a href="#">pmsdetailing@yahoo.com</a>
-                    <a href="#">(607) 794-1094</a>
+                    <a href="mailto: abc@example.com">example@yahoo.com</a>
+                    <a href="tel:012928384445">(6072) 7394-140947</a>
                 </div>
                 <div className={styles.footer_book_btn}>
                     <button>BOOK TODAY</button>
@@ -82,15 +82,15 @@ export default function Footer() {
                         <h4>FOLLOW US</h4>
                     </div>
                     <div className={styles.footer_follow_us_social_container}>
-                        <div className={styles.follow_us_social_icon_container}>
+                        <a href='#' className={styles.follow_us_social_icon_container}>
                             <MdEmail />
-                        </div>
-                        <div className={styles.follow_us_social_icon_container}>
+                        </a>
+                        <a href='https://www.facebook.com' className={styles.follow_us_social_icon_container}>
                             <FaFacebookF />
-                        </div>
-                        <div className={styles.follow_us_social_icon_container}>
+                        </a>
+                        <a href='https://www.instagram.com' className={styles.follow_us_social_icon_container}>
                             <FaInstagram />
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
