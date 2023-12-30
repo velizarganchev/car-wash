@@ -5,9 +5,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
-import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { BsFillPersonLinesFill } from "react-icons/bs"
 
 const Navigation = () => {
 
@@ -16,16 +13,15 @@ const Navigation = () => {
 
     const handleNav = () => {
         setNav(!nav);
-        console.log(nav);
     };
 
     useEffect(() => {
-        const handleShadow = () => {
+        const handleNavShow = () => {
             if (window.scrollY >= 90 && nav === true) {
                 setNav(false);
             }
         };
-        window.addEventListener('scroll', handleShadow)
+        window.addEventListener('scroll', handleNavShow)
     }, [nav]);
     return (
         <div className={styles.nav_container}>
@@ -47,13 +43,15 @@ const Navigation = () => {
             <div className={styles.nav}>
                 <div className={styles.info_links_container}>
                     <div className={styles.info_links}>
-                        <div className={styles.phone}>Call: <a href="#">0101010101</a></div>
-                        <div className={styles.location}>Location: <a href="#">7575 Airport Rd,Hornell, NY 14843</a></div>
+                        <div className={styles.phone}>Call: <a href="tel:90843829205023">0101010101</a></div>
+                        <div className={styles.location}>Location: <a href="mailto: abc@example.co">7575 Airport Rd,Hornell, NY 14843</a></div>
                     </div>
-                    <img className={styles.logo} src="/assets/logo.png" alt="Logo" />
-                    <div className={styles.book_btn_container}>
+                    <Link href='/'>
+                        <img className={styles.logo} src="/assets/logo.png" alt="Logo" />
+                    </Link>
+                    <Link href='/contact' className={styles.book_btn_container}>
                         <button className={styles.book_btn}>Book Now</button>
-                    </div>
+                    </Link>
                 </div>
                 <div className={styles.nav_list_container}>
                     <ul className={styles.nav_list}>
