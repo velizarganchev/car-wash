@@ -32,7 +32,7 @@ export default function Services() {
                         <h5>METAL POLISHING</h5>
                     </div>
                     <div className={styles.services_item_content_container}>
-                        <p>We apply ceramic coatings to all vehicles, from motorcycles & pick-up trucks, to semi-trucks & farm equipment. We have the perfect ceramic coating package to best suit your vehicle.</p>
+                        <p>If it has metal, paint, or gelcoat, we can polish & protect it.Remove oxidation and create a reflective surface that also adds protection from corrosion and contamination.</p>
                     </div>
                     <div className={styles.services_item_button_container}>
                         <button>PRICING & PACKAGES</button>

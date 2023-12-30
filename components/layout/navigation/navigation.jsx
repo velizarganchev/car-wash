@@ -16,23 +16,34 @@ const Navigation = () => {
 
     const handleNav = () => {
         setNav(!nav);
+        console.log(nav);
     };
 
     useEffect(() => {
         const handleShadow = () => {
-            if (window.scrollY >= 90) {
-                setShadow(true);
-            } else {
-                setShadow(false);
+            if (window.scrollY >= 90 && nav === true) {
+                setNav(false);
             }
         };
         window.addEventListener('scroll', handleShadow)
-    }, []);
+    }, [nav]);
     return (
         <div className={styles.nav_container}>
-            <div className={styles.nav_responsiv_btn_container}>
+            <div className={styles.nav_responsiv_btn_container} onClick={handleNav}>
                 <GiHamburgerMenu />
             </div>
+            <div className={`${styles.dropdown_menu_container} ${nav ? styles.open : ''}`}>
+                <ul className={styles.dropdown_menu_list}>
+                    <li className={styles.dropdown_menu_list_item}>HOME</li>
+                    <li className={styles.dropdown_menu_list_item}>CERAMIC COATING</li>
+                    <li className={styles.dropdown_menu_list_item}>PAINT CORRECTION</li>
+                    <li className={styles.dropdown_menu_list_item}>PREMIUM DETAILING</li>
+                    <li className={styles.dropdown_menu_list_item}>METAL POLISHING</li>
+                    <li className={styles.dropdown_menu_list_item}>GALLERY</li>
+                    <li className={styles.dropdown_menu_list_item}>MORE</li>
+                </ul>
+            </div>
+
             <div className={styles.nav}>
                 <div className={styles.info_links_container}>
                     <div className={styles.info_links}>

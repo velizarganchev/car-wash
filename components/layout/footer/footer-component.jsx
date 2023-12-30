@@ -75,7 +75,7 @@ export default function Footer() {
                     <img src="/assets/logo.png" alt="" />
                 </div>
                 <div className={styles.footer_follow_us_text_container}>
-                    <p>For the last decade, Premier Mirror Shine has strived for quality results and unmatched experience. We have catered to our reputation in the auto detailing industry by perfecting our services, including ceramic coatings, metal polishing, premium interior and exterior details, paint corrections and more. We make it our mission to ensure your vehicle is in quality hands when you look to Premier Mirror Shine for your auto detailing needs.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor tenetur illo cupiditate quo sunt voluptatem maiores alias obcaecati vitae officia consequuntur impedit nesciunt perferendis vero sequi, minima soluta esse!</p>
                 </div>
                 <div className={styles.footer_follow_us_social_main_container}>
                     <div className={styles.footer_follow_us_title_container}>
